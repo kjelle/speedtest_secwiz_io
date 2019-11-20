@@ -10,7 +10,7 @@ function float2ms(value){
 
 $(document).ready(function() {
   var jsonData = $.ajax({
-      url: 'https://speedtest.secwiz.io/data.json',
+      url: './data.json',
       dataType: 'json',
       error: function(req, err){ console.log('Error loading data.json: ' + err); }
     }).done(function (results) {	
